@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+label, input, select {
+    display: block;
+    margin: 10px 0;
+}
+
+.hidden {
+    display: none;
+}

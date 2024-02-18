@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Student Information System</h1>
+    <form id="studentForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required><br>
+
+        <label for="branch">Branch:</label>
+        <input type="text" id="branch" required><br>
+
+        <label for="semester">Semester:</label>
+        <input type="number" id="semester" required><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br>
+
+        <label for="subject1">Subject 1 Marks (out of 50):</label>
+        <input type="number" id="subject1" min="0" max="50" required><br>
+
+        <label for="subject2">Subject 2 Marks (out of 50):</label>
+        <input type="number" id="subject2" min="0" max="50" required><br>
+
+        <label for="subject3">Subject 3 Marks (out of 50):</label>
+        <input type="number" id="subject3" min="0" max="50" required><br>
+
+        <button type="button" onclick="calculateGradeAndAverage()">Submit</button>
+    </form>
+
+    <div id="result" class="details" style="display:none;">
+        <h2>Student Details</h2>
+        <p><strong>Name:</strong> <span id="studentName"></span></p>
+        <p><strong>Branch:</strong> <span id="studentBranch"></span></p>
+        <p><strong>Semester:</strong> <span id="studentSemester"></span></p>
+        <p><strong>Gender:</strong> <span id="studentGender"></span></p>
+        <p><strong>Average Marks:</strong> <span id="averageMarks"></span></p>
+        <p><strong>Grade:</strong> <span id="grade"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
